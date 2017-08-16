@@ -1,0 +1,8 @@
+
+<div class="center">
+  <h2>Songs</h2>
+  <div class="song" ng-repeat="song in vm.songs | orderBy:'-created_at'">
+    <h4>{{song.title}}</h4>
+    <p>Artist: {{song.artist}} | Album: {{song.album}}</p>
+  </div>
+</div>
